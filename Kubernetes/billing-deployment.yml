@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: billing-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: billing-deployment
+  template:
+    metadata:
+      labels:
+        app: billing-deployment
+    spec:
+      containers:
+        - name: billing-deployment
+          image: aishwaryakr/billing-service:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9001
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: DB_CONN
+            - name: Kafka__BootstrapServers
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: KAFKA_BOOTSTRAP_SERVERS

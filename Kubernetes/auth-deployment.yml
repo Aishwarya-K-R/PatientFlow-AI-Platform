@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-deployment
+  template:
+    metadata:
+      labels:
+        app: auth-deployment
+    spec:
+      containers:
+        - name: auth-deployment
+          image: aishwaryakr/auth-service:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 4005
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: DB_CONN
+            - name: Jwt__Key
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: JWT_SECRET
+            - name: Kafka__BootstrapServers
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: KAFKA_BOOTSTRAP_SERVERS

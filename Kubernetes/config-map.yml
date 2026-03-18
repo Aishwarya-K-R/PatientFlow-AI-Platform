@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  REDIS_CONN: "redis-service:6379"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka-service:9092"
+  KAFKA_ZOOKEEPER_CONNECT: "zookeeper-service:2181"

@@ -1,0 +1,504 @@
+2026-03-07 11:16:28.501 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 11:16:28.543 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 11:16:28.545 +00:00 [INF] Application started. Press Ctrl+C to shut dow2026-03-07 11:16:28.551 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 11:16:28.552 +00:00 [INF] Application started. 2026-03-07 11:18:33.582 +00:00 [INF] Connecting to Billing Service at http://localhost:9001
+2026-03-07 11:18:50.483 +00:00 [ERR] An unhandled exception has o2026-03-07 11:23:16.953 +00:00 [INF] Application is shutting down...
+ions.DuplicateEmailException: Patient with email patient-1@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 39
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:18:50.490 +00:00 [ERR] Unhandled exception occurred!!!
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-1@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 39
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:19:06.487 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-1@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 39
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:19:06.489 +00:00 [ERR] Unhandled exception occurred!!!
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-1@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 39
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:19:30.244 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid patient details!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 33
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:19:30.245 +00:00 [ERR] Unhandled exception occurred!!!
+System.ArgumentException: Invalid patient details!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 33
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:19:41.269 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: Connection refused")
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context, Int32 attempt)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Patient_Management_System.Services.BillingGrpcClient.CreateBillingAccountAsync(Int32 patientId) in /src/Services/BillingGrpcClient.cs:line 34
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 53
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:19:41.271 +00:00 [ERR] Unhandled exception occurred!!!
+Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: Connection refused")
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context, Int32 attempt)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Patient_Management_System.Services.BillingGrpcClient.CreateBillingAccountAsync(Int32 patientId) in /src/Services/BillingGrpcClient.cs:line 34
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 53
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:23:16.943 +00:00 [INF] Application is shutting down...
+2026-03-07 11:25:12.571 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 11:25:12.610 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 11:25:12.611 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 11:25:12.611 +00:00 [INF] Hosting environment: Production
+2026-03-07 11:25:12.612 +00:00 [INF] Content root path: /app
+2026-03-07 11:27:19.250 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 11:27:19.832 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-2@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.c2026-03-07 11:27:41.528 +00:00 [INF] Billing request received for PatientId 3
+2026-03-07 11:27:41.530 +00:00 [INF] Billing request received for PatientId 3
+2026-03-07 11:31:02.377 +00:00 [INF] Billing request received for PatientId 1
+2026-03-07 11:31:02.378 +00:00 [INF] Billing request received for PatientId 1
+2026-03-07 12:05:05.250 +00:00 [INF] Application is shutting down...
+r, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:27:19.838 +00:00 [ERR] Unhandled exception occurred!!!
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-2@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 39
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 11:27:41.980 +00:00 [INF] Billing account created with ID 1580d64e-02d7-4eed-b67e-d9c3147cadf5
+2026-03-07 12:05:05.251 +00:00 [INF] Application is shutting down...
+2026-03-07 12:12:07.872 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 12:12:07.913 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 12:12:07.914 +00:00 [INF] Application started. Press Ctrl+C to shut dow2026-03-07 12:12:07.917 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 12:12:07.917 +00:00 [INF] Application started. 2026-03-07 12:16:04.131 +00:00 [INF] Application is shutting down...
+ng environment: Production
+2026-03-07 12:12:07.918 +00:00 [INF] Content root path: /app
+2026-03-07 12:16:04.131 +00:00 [INF] Application is shutting down...
+2026-03-07 12:19:20.820 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 12:19:20.862 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 12:19:20.863 +00:00 [INF] Application started. Press Ctrl+C to shut dow2026-03-07 12:19:20.863 +00:00 [INF] Now listening on: http://0.0.0.0:902022026-03-07 12:19:20.864 +00:00 [INF] Application started. 2026-03-07 12:22:30.909 +00:00 [INF] Application is shutting down...
+ng environment: Production
+2026-03-07 12:19:20.866 +00:00 [INF] Content root path: /app
+2026-03-07 12:22:30.907 +00:00 [INF] Application is shutting down...
+2026-03-07 12:23:51.859 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 12:23:51.910 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 12:23:51.911 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 12:23:51.911 +00:00 [INF] Hosting environment: Production
+2026-03-07 12:23:51.912 +00:00 [INF] Content root path: /app
+2026-03-07 12:24:50.089 +00:00 [INF] Application is shutting down...
+ing down...
+2026-03-07 12:26:07.838 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 12:26:07.883 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 12:26:07.884 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 12:26:07.884 +00:00 [INF] Hosting environment: Production
+2026-03-07 12:26:07.886 +00:00 [INF] Content root path: /app
+2026-03-07 12:30:21.667 +00:00 [INF] Application is shutting down...
+ng environment: Production
+2026-03-07 12:26:07.884 +00:00 [INF] Content root path: /app
+2026-03-07 12:30:21.661 +00:00 [INF] Application is shutting down...
+2026-03-07 12:31:39.185 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 12:31:39.230 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 12:31:39.231 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 12:31:39.231 +00:00 [INF] Hosting environment: Production
+2026-03-07 12:31:39.231 +00:00 [INF] Content root path: /app
+2026-03-07 12:35:12.649 +00:00 [INF] Application is shutting down...
+ing down...
+2026-03-07 12:35:36.049 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 12:35:36.064 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:5244'.
+2026-03-07 12:35:36.102 +00:00 [INF] Now listening on: http://[::]:5244
+2026-03-07 12:35:36.102 +00:00 [INF] Application started. Press Ctrl+C to2026-03-07 12:41:41.817 +00:00 [INF] Application is shutting down...
+ Production
+2026-03-07 12:35:36.103 +00:00 [INF] Content root path: /app
+2026-03-07 12:41:41.814 +00:00 [INF] Application is shutting down...
+2026-03-07 18:35:09.617 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:35:09.660 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:35:09.673 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:35:09.674 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:35:09.674 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:35:09.674 +00:00 [INF] Content root path: /app
+2026-03-07 18:40:04.662 +00:00 [INF] Application is shutting down...
+2026-03-07 18:43:10.656 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:43:10.706 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:43:10.718 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:43:10.719 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:43:10.719 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:43:10.720 +00:00 [INF] Content root path: /app
+2026-03-07 18:43:54.175 +00:00 [ERR] BackgroundService failed
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:43:54.182 +00:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:43:54.183 +00:00 [INF] Application is shutting down...
+sk`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 18:43:35.419 +00:00 [ERR] Unhandled exception occurred!!!
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-3@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 40
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 18:48:17.429 +00:00 [INF] Application is shutting down...
+ http://billing-service:9001
+2026-03-07 18:43:54.710 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:43:54.721 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:43:54.722 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:43:54.722 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:43:54.722 +00:00 [INF] Content root path: /app
+2026-03-07 18:44:39.149 +00:00 [ERR] BackgroundService failed
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:44:39.161 +00:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:44:39.164 +00:00 [INF] Application is shutting down...
+2026-03-07 18:44:39.692 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:44:39.736 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:44:39.752 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:44:39.752 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:44:39.752 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:44:39.753 +00:00 [INF] Content root path: /app
+2026-03-07 18:45:24.207 +00:00 [ERR] BackgroundService failed
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:45:24.232 +00:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:45:24.234 +00:00 [INF] Application is shutting down...
+2026-03-07 18:45:24.823 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:45:24.871 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:45:24.885 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:45:24.888 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:45:24.888 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:45:24.888 +00:00 [INF] Content root path: /app
+2026-03-07 18:46:09.364 +00:00 [ERR] BackgroundService failed
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:46:09.379 +00:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:46:09.380 +00:00 [INF] Application is shutting down...
+2026-03-07 18:46:09.984 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:46:10.024 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:46:10.036 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:46:10.036 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:46:10.037 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:46:10.037 +00:00 [INF] Content root path: /app
+2026-03-07 18:46:54.416 +00:00 [ERR] BackgroundService failed
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:46:54.426 +00:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:46:54.428 +00:00 [INF] Application is shutting down...
+2026-03-07 18:46:54.979 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:46:55.024 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:46:55.038 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:46:55.039 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:46:55.039 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:46:55.041 +00:00 [INF] Content root path: /app
+2026-03-07 18:47:39.442 +00:00 [ERR] BackgroundService failed
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:47:39.458 +00:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.FormatException: The input string '{"PatientId":4,"EventType":"PATIENT_CREATED"}' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at KafkaConsumer.<>c__DisplayClass3_0.<<ExecuteAsync>b__0>d.MoveNext() in /src/Kafka/KafkaConsumer.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2026-03-07 18:47:39.461 +00:00 [INF] Application is shutting down...
+2026-03-07 18:47:39.978 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:47:40.019 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:47:40.030 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:47:40.031 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:47:40.031 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:47:40.031 +00:00 [INF] Content root path: /app
+2026-03-07 18:48:17.421 +00:00 [INF] Application is shutting down...
+2026-03-07 18:49:55.895 +00:00 [INF] Connecting to Billing Service at http://billing-service:9001
+2026-03-07 18:49:55.938 +00:00 [WRN] Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-07 18:49:55.950 +00:00 [INF] Now listening on: http://0.0.0.0:9001
+2026-03-07 18:49:55.950 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-07 18:49:55.951 +00:00 [INF] Hosting environment: Production
+2026-03-07 18:49:55.951 +00:00 [INF] Content root path: /app
+2026-03-07 18:50:16.145 +00:00 [INF] Billing request received for PatientId 5
+2026-03-07 18:54:32.958 +00:00 [INF] Billing request received for PatientId 1
+2026-03-07 18:54:39.279 +00:00 [INF] Billing request received for PatientId 0
+2026-03-07 18:54:42.953 +00:00 [INF] Billing request received for PatientId 1
+2026-03-07 18:56:37.742 +00:00 [INF] Billing request received for PatientId 6
+2026-03-07 18:58:27.015 +00:00 [INF] Application is shutting down...
+roduction
+2026-03-07 18:49:56.287 +00:00 [INF] Content root path: /app
+2026-03-07 18:50:08.248 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-4@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 40
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 18:50:08.256 +00:00 [ERR] Unhandled exception occurred!!!
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-4@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 40
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 18:50:16.630 +00:00 [INF] Billing account created with ID 1ce8c50a-6b36-4d1f-bc4d-f5cbc32279e1
+2026-03-07 18:53:06.699 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-5@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 40
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 18:53:06.705 +00:00 [ERR] Unhandled exception occurred!!!
+Patient_Management_System.Exceptions.DuplicateEmailException: Patient with email patient-5@gmail.com already exists!!!
+   at Patient_Management_System.Services.PatientService.CreatePatientAsync(Patient patient) in /src/Services/PatientService.cs:line 40
+   at Patient_Management_System.Controllers.PatientController.CreatePatient(Patient patient) in /src/Controllers/PatientController.cs:line 37
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-07 18:56:37.770 +00:00 [INF] Billing account created with ID 8d3c1f7b-6704-42bf-8786-1f651dfe8a4e
+2026-03-07 18:58:27.012 +00:00 [INF] Application is shutting down...

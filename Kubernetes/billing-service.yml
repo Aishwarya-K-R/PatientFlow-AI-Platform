@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: billing-service
+spec:
+  selector:
+    app: billing-deployment
+  ports:
+    - port: 9001
+      targetPort: 9001
