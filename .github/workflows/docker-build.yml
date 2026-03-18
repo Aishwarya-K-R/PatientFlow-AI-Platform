@@ -35,5 +35,5 @@ jobs:
 
       - name: Build & Push API Gateway
         run: |
-          docker build -t aishwaryakr/api-gateway -f Dockerfile.gateway .
+          docker build -t aishwaryakr/api-gateway -f Dockerfile.api-gateway .
           docker push aishwaryakr/api-gateway
