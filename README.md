@@ -16,7 +16,6 @@ It is built to simulate how modern healthcare platforms **handle patient data, a
 <h2>🏗️ Architecture</h2>
 
 <img width="700" height="700" alt="ChatGPT Image Mar 19, 2026, 05_54_42 PM" src="https://github.com/user-attachments/assets/e834db75-f226-4d93-a0e7-fa43e3d3983c" />  
-
 <h2>🔧 Core Components</h2>
 
 **1. API Gateway:**  
@@ -65,13 +64,14 @@ The project includes a fully automated pipeline:
 - Ready-to-deploy container images  
 - Consistent and automated builds
 
-**☸️ Kubernetes Support**  
-Kubernetes manifests are included for all services.
-⚠️ **Note:**  
-- Full deployment may fail on low-resource systems (e.g., Minikube) due to memory limits.
-- Its recommended to deploy on a cloud Kubernetes cluster for full setup.
+<h2>☸️ Kubernetes Support</h2>  
+Kubernetes manifests are included for all services.  
+⚠️ **Note:**    
+- Full deployment may fail on low-resource systems (e.g., Minikube) due to memory limits.  
+- Its recommended to deploy on a cloud Kubernetes cluster for full setup.  
 
-🛠️ **Steps for Implementation**  
+<h2>🛠️ Steps for Implementation</h2>  
+
 1. Clone Repository:  
 - git clone **https://github.com/Aishwarya-K-R/PatientFlow-Platform.git**
 - cd PatientFlow-Platform
@@ -85,6 +85,3 @@ Kubernetes manifests are included for all services.
 - **Kafka UI:** http://localhost:8080  
 - **Prometheus:** http://localhost:9090  
 - **Grafana:** http://localhost:3000
-
-
-
