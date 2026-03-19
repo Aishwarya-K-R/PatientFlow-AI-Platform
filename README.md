@@ -17,7 +17,7 @@ It simulates how modern healthcare platforms **handle patient data, authenticati
 
 ## 🏗️ Architecture
 
-<img src="https://github.com/user-attachments/assets/e834db75-f226-4d93-a0e7-fa43e3d3983c" width="500" height="500" alt="Architecture Diagram" />
+<img src="https://github.com/user-attachments/assets/e834db75-f226-4d93-a0e7-fa43e3d3983c" width="700" height="700" alt="Architecture Diagram" />
 
 
 ## 🔧 Core Components
@@ -93,7 +93,7 @@ Kubernetes manifests are included for all services.
 ## 🛠️ Setup & Installation
 
 1. Clone Repository:   
-git clone https://github.com/Aishwarya-K-R/PatientFlow-Platform.git   
+**git clone** https://github.com/Aishwarya-K-R/PatientFlow-Platform.git   
 **cd PatientFlow-Platform**   
 2. Create **.env** file in the project root and provide the data required for **docker-compose.yml** file  
 3. For Kubernetes setup, provide the required data in **secrets.yml and config-map.yml** files  
