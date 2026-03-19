@@ -1,4 +1,4 @@
-🚀 **<h1>PatientFlow Platform : Scalable Cloud-Native Microservices for Healthcare Ops</h1>**  
+<h1>🚀 PatientFlow Platform : Scalable Cloud-Native Microservices for Healthcare Ops</h1>
 
 📌 **Overview**  
 **PatientFlow Platform** is a **cloud-native, microservices-based healthcare backend system** designed to manage patient operations efficiently and scalably.  
