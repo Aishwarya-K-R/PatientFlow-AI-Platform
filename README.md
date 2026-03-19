@@ -14,6 +14,6 @@ The platform demonstrates **real-world production architecture patterns** includ
 It is built to simulate how modern healthcare platforms **handle patient data, authentication, billing, and system communication at scale.**  
 
 🏗️ **Architecture**  
-<img width="1000" height="1000" alt="ChatGPT Image Mar 19, 2026, 05_54_42 PM" src="https://github.com/user-attachments/assets/e834db75-f226-4d93-a0e7-fa43e3d3983c" />  
+<img width="500" height="500" alt="ChatGPT Image Mar 19, 2026, 05_54_42 PM" src="https://github.com/user-attachments/assets/e834db75-f226-4d93-a0e7-fa43e3d3983c" />  
 
 
