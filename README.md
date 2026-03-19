@@ -92,8 +92,8 @@ Kubernetes manifests are included for all services.
 
 ## 🛠️ Setup & Installation
 
-1. Clone Repository   
-git clone https://github.com/Aishwarya-K-R/PatientFlow-Platform.git
+1. Clone Repository:   
+git clone https://github.com/Aishwarya-K-R/PatientFlow-Platform.git   
 **cd PatientFlow-Platform**   
 2. Create **.env** file in the project root and provide the data required for **docker-compose.yml** file  
 3. For Kubernetes setup, provide the required data in **secrets.yml and config-map.yml** files  
