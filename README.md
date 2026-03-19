@@ -14,13 +14,11 @@ The platform demonstrates **real-world production architecture patterns**, inclu
 
 It simulates how modern healthcare platforms **handle patient data, authentication, billing, and system communication at scale.**
 
----
 
 ## 🏗️ Architecture
 
 ![Architecture Diagram](https://github.com/user-attachments/assets/e834db75-f226-4d93-a0e7-fa43e3d3983c)
 
----
 
 ## 🔧 Core Components
 
@@ -50,7 +48,6 @@ It simulates how modern healthcare platforms **handle patient data, authenticati
 - **GitHub Actions (CI/CD)** → Automated build & push  
 - **Kubernetes (Manifests)** → Orchestration-ready setup  
 
----
 
 ## ⚙️ System Functionality
 
@@ -68,7 +65,6 @@ The platform simulates a real healthcare workflow:
 6. Health checks ensure service availability  
 7. Metrics are monitored in real-time via **Prometheus and Grafana**
 
----
 
 ## 🔄 CI/CD Pipeline
 
@@ -84,7 +80,6 @@ The project includes a fully automated pipeline:
 - Ready-to-deploy container images  
 - Consistent and automated builds  
 
----
 
 ## ☸️ Kubernetes Support
 
@@ -94,7 +89,6 @@ Kubernetes manifests are included for all services.
 - Deployment may fail on low-resource systems (e.g., Minikube) due to memory limits  
 - Recommended to use a cloud Kubernetes cluster for full setup  
 
----
 
 ## 🛠️ Setup & Installation
 
