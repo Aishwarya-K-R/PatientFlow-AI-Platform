@@ -110,9 +110,18 @@ Kubernetes manifests are included for all services.
 ## 📊 Event Streaming via Apacke Kafka
 
 ### 🟢 Producer: Patient Service publishes patient events to Kafka   
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5f01982f-3439-4f4c-8aff-90b833ea38fb" />   
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/5f01982f-3439-4f4c-8aff-90b833ea38fb" />   
 
 ### 🔵 Consumer: Billing Service listens to events and creates billing account asynchronously
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ebf17fd4-2bae-47ba-b86e-172247b41d85" />   
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/ebf17fd4-2bae-47ba-b86e-172247b41d85" /> 
 
 
+## 📊 Monitoring & Observability Stack
+
+### 🟢 Prometheus: Collects and aggregates real-time metrics across microservices for deep system observability
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/b0662457-c002-446c-bf97-d21936efbd02" />
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/a2e166e9-78c7-49dd-98ee-8d52aa1e6bcb" />
+  
+
+### 🔵 Grafana: Transforms metrics into powerful visual dashboards for real-time insights and performance monitoring
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/bf0a1976-7744-4c25-9aa8-e776919c62e6" />
