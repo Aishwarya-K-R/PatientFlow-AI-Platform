@@ -124,4 +124,4 @@ Kubernetes manifests are included for all services.
   
 
 ### 🔵 Grafana: Transforms metrics into powerful visual dashboards for real-time insights and performance monitoring
-<img width="750" height="750" alt="image" src="https://github.com/user-attachments/assets/2c53866d-f42f-4b51-8399-1974b614ce09" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/2c53866d-f42f-4b51-8399-1974b614ce09" />
