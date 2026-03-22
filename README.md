@@ -2,15 +2,19 @@
 
 ## 📌 Overview
 
-**PatientFlow Platform** is a **cloud-native, microservices-based healthcare backend system** designed to manage patient operations efficiently and scalably.
+**PatientFlow Platform** is a **cloud-native, microservices-based healthcare backend system** designed to manage patient operations **efficiently, securely, and scalably**.
 
 The platform demonstrates **real-world production architecture patterns**, including:
-- Microservices architecture
-- Event-driven communication
-- API Gateway pattern
-- Observability & monitoring
-- CI/CD automation
-- Containerization & orchestration
+- **Microservices architecture** with independent, scalable services
+- **Event-driven communication** via Kafka for asynchronous workflows
+- **API Gateway pattern** for centralized routing, aggregation, and rate-limiting
+- **Observability & monitoring** with Prometheus and Grafana
+- **CI/CD automation** for consistent, production-ready deployments
+- **Containerization & Orchestration** with Docker and Kubernetes
+- **Automated testing** for critical services like Auth and Patient management to ensure reliability
+- **AI-powered LLM integration**, providing an intelligent chatbot that can answer patient-related queries using cached context from Redis and database records
+
+It **simulates how modern healthcare platforms** handle authentication, patient data, billing, and system communication **at scale**, now enhanced with **robust testing and AI capabilities** to make the system more reliable and intelligent.
 
 It simulates how modern healthcare platforms **handle patient data, authentication, billing, and system communication at scale.**
 
