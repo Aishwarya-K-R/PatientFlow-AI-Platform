@@ -33,6 +33,11 @@ jobs:
           docker build -t aishwaryakr/billing-service -f Dockerfile.billing .
           docker push aishwaryakr/billing-service
 
+      - name: Build & Push AI Service
+        run: |
+          docker build -t aishwaryakr/ai-service -f Dockerfile.llm .
+          docker push aishwaryakr/ai-service
+
       - name: Build & Push API Gateway
         run: |
           docker build -t aishwaryakr/api-gateway -f Dockerfile.api-gateway .
