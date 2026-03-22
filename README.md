@@ -1,8 +1,8 @@
-# 🚀 PatientFlow Platform: Scalable Cloud-Native Microservices for Healthcare Ops
+# 🚀 PatientFlow Platform: AI-Powered Cloud-Native Microservices for Smart Healthcare Ops
 
 ## 📌 Overview
 
-**PatientFlow Platform** is a **cloud-native, microservices-based healthcare backend system** designed to manage patient operations **efficiently, securely, and scalably**.
+**PatientFlow Platform** is an **AI-powered cloud-native, microservices-based healthcare backend system** designed to manage patient operations **efficiently, securely, and scalably**.
 
 The platform demonstrates **real-world production architecture patterns**, including:
 - **Microservices architecture** with independent, scalable services
@@ -15,8 +15,6 @@ The platform demonstrates **real-world production architecture patterns**, inclu
 - **AI-powered LLM integration**, providing an intelligent chatbot that can answer patient-related queries using cached context from Redis and database records
 
 It **simulates how modern healthcare platforms** handle authentication, patient data, billing, and system communication **at scale**, now enhanced with **robust testing and AI capabilities** to make the system more reliable and intelligent.
-
-It simulates how modern healthcare platforms **handle patient data, authentication, billing, and system communication at scale.**
 
 
 ## 🏗️ Architecture
@@ -31,9 +29,9 @@ It simulates how modern healthcare platforms **handle patient data, authenticati
 - Handles routing, aggregation, rate limiting, and health checks
 
 ### 2. Microservices
-- **Auth Service** → Authentication & authorization  
-- **Patient Service** → Patient data management  
-- **Billing Service** → Billing and transactions  
+- **Auth Service** → Authentication & authorization, with **automated tests** ensuring robust security and reliability
+- **Patient Service** → Patient data management, with **unit & integration tests** for data consistency
+- **Billing Service** → Billing and transactions, event-driven processing
 
 ### 3. Communication Layer
 - **gRPC** → Fast synchronous communication between services  
@@ -41,7 +39,7 @@ It simulates how modern healthcare platforms **handle patient data, authenticati
 
 ### 4. Data Layer
 - **PostgreSQL** → Persistent storage  
-- **Redis** → Caching and fast data access  
+- **Redis** → Caching and fast patient context access, powering **LLM chatbot context**
 
 ### 5. Observability
 - **Prometheus** → Metrics collection  
@@ -55,15 +53,18 @@ It simulates how modern healthcare platforms **handle patient data, authenticati
 
 ## ⚙️ System Functionality
 
-The platform simulates a real healthcare workflow:
+The platform simulates a **real-world healthcare workflow**, now enhanced with **robust testing and AI capabilities**:
 
 1. User authentication using **JWT-based RBAC** via Auth Service  
-2. Patient data creation and retrieval  
-3. Billing operations triggered via events  
+2. Patient data creation and retrieval with **automated test coverage** 
+3. Billing operations triggered via events **(Kafka consumer-producer model)**
 4. Service communication:
    - **Synchronous → gRPC**
    - **Asynchronous → Kafka**
-5. API Gateway:
+5. **AI-Powered Chatbot:**   
+   - Uses **llama3 LLM integration** to answer patient-related queries   
+   - Fetches **patient context** from **Redis and database** for **intelligent, up-to-date responses**   
+5. **API Gateway:**   
    - Routes all external requests
    - Applies rate limiting
 6. Health checks ensure service availability  
@@ -100,15 +101,17 @@ Kubernetes manifests are included for all services.
 **git clone** https://github.com/Aishwarya-K-R/PatientFlow-Platform.git   
 **cd PatientFlow-Platform**   
 2. Create **.env** file in the project root and provide the data required for **docker-compose.yml** file  
-3. For Kubernetes setup, provide the required data in **secrets.yml and config-map.yml** files  
-4. Run with Docker Compose: **docker-compose up --build**  
-5. Access the services:  
+3. For Kubernetes setup, provide the required data in **secrets.yml and config-map.yml** files   
+4. Run Automated Tests: **dotnet test PMS.Tests/PMS.Tests.csproj**   
+5. Run with Docker Compose: **docker-compose up --build**  
+6. Access the services:  
 - **API Gateway:** http://localhost:4004/   
 - **Health Check:** http://localhost:4004/health  
 - **Kafka UI:** http://localhost:8080  
-- **Prometheus:** http://localhost:9090  
-- **Grafana:** http://localhost:3000
-6. Run Kubernetes and accesss the services using domain name (based on the setup): **kubectl apply -f Kubernetes/**
+- **Prometheus:** http://localhost:9090     
+- **Grafana:** http://localhost:3000   
+- **AI-Powered Chatbot:** http://localhost:4004/ai/ask   
+7. Run Kubernetes and accesss the services using domain name (based on the setup): **kubectl apply -f Kubernetes/**
   
 
 ## 📊 Event Streaming via Apacke Kafka
