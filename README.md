@@ -106,7 +106,7 @@ Kubernetes manifests are included for all services.
 2. Create **.env** file in the project root and provide the data required for **docker-compose.yml** file  
 3. For Kubernetes setup, provide the required data in **secrets.yml and config-map.yml** files   
 4. Run Automated Tests: **dotnet test PMS.Tests/PMS.Tests.csproj**
-5. Serve the model and pull it locally:
+5. Serve the model and pull it locally:  
 **ollama serve   
 ollama pull llama3**  
 6. Run with Docker Compose: **docker-compose up --build**  
