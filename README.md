@@ -1,4 +1,4 @@
-# 🚀 PatientFlow Platform: Cloud-Native Microservices with AI and Event Streaming for Healthcare Ops
+# 🚀 PatientFlow Platform: Cloud-Native Microservices with AI & Kafka for Healthcare Ops
 
 ## 📌 Overview
 
