@@ -126,20 +126,20 @@ ollama pull llama3**
 ## 📊 Event Streaming via Apacke Kafka
 
 ### 🟢 Patient Service: Performs CRUD operations on patients and publishes events to Kafka   
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f73bba52-fef0-4efa-857f-7ef2410a28ec" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f73bba52-fef0-4efa-857f-7ef2410a28ec" />
  
 ### 🔵 Billing Service: Consumes patient create events, creates billing accounts, and publishes billing events to Kafka  
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/60e5041c-5839-439e-b83e-db15a614e457" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/60e5041c-5839-439e-b83e-db15a614e457" />
 
 ### 🟢 AI Service: Consumes patient and billing events to update Redis cache for RAG-powered LLM responses  
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/27324373-23ab-4366-a565-1e8eebbb57f3" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/27324373-23ab-4366-a565-1e8eebbb57f3" />
 
 
 ## 📊 Monitoring & Observability Stack  
 
 ### 🔵 Prometheus: Collects and aggregates real-time metrics across microservices for deep system observability  
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/cc54c279-6d43-42c8-af33-5c21153f7fb4" />
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/519d36f9-1c5a-4d4d-95eb-bf52d752b907" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/cc54c279-6d43-42c8-af33-5c21153f7fb4" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/519d36f9-1c5a-4d4d-95eb-bf52d752b907" />
   
 ### 🟢 Grafana: Transforms metrics into powerful visual dashboards for real-time insights and performance monitoring
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/2c53866d-f42f-4b51-8399-1974b614ce09" />
